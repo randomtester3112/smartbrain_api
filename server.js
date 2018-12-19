@@ -26,6 +26,9 @@ app.use(bodyParser.json())
 app.use(cors())
 
 //Signin
+app.get('/',res.send("It is working"));
+
+//Signin
 app.post('/signin',signin.handleSignIn(db,bcrypt));
 
 //Register
